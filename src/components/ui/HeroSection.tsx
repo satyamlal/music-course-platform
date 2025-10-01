@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { Spotlight } from "@/components/ui/spotlight-new";
+import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 const HeroSection = () => {
   const words = `Master the art of Music`;
@@ -20,8 +21,14 @@ const HeroSection = () => {
           journey today. Whether you are a beginner or looking to refine your
           skills, join us to unlock your true potential.
         </p>
-        <div className="mt-4">
-          <Link href={"/courses"}> Explore Courses </Link>
+        <div className="mt-4 flex item-center justify-center">
+          <HoverBorderGradient
+            containerClassName="rounded-full"
+            as="button"
+            className="dark:bg-black/60 bg-white text-black dark:text-white flex items-center space-x-2"
+          >
+            <Link href={"/courses"}>Explore Courses</Link>
+          </HoverBorderGradient>
         </div>
 
         <div className="mt-10 inline-block relative group"></div>
