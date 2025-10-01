@@ -23,6 +23,8 @@ const HeroSection = () => {
         <div className="mt-4">
           <Link href={"/courses"}> Explore Courses </Link>
         </div>
+
+        <div className="mt-10 inline-block relative group"></div>
       </div>
     </div>
   );
